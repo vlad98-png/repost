@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Рецепты Flex</title>
+  <style>
+    body {
+      background: #7fffd4;
+      font-family: Arial, sans-serif;
+    }
+    .header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 35px;
+    }
+    .main-title {
+      font-size: 2.3em;
+      color: #2d2d2d;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .recipes-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin: 0 40px 40px 40px;
+    }
+    .recipe-row {
+      display: flex;
+      align-items: center;
+      background: #e5cf22;
+      border: 2px solid #623a19;
+      border-radius: 30px;
+      padding: 25px 30px;
+      max-width: 500px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.10);
+    }
+    .recipe-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      margin-right: 30px;
+      border: 1px solid #666;
+      object-fit: cover;
+    }
+    .recipe-link {
+      font-size: 1.3em;
+      color: #191970;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    .recipe-link:hover {
+      color: #b83b21;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <h1 class="main-title">Лучшие рецепты</h1>
+  </div>
+  <div class="recipes-list">
+    <div class="recipe-row">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5d09Uhzwc1uX-OF7qiSJYtB_evQqde-bwFw&s" alt="Лазанья" class="recipe-img">
+      <a href="recipes/lasagna.html" class="recipe-link">Лазанья</a>
+    </div>
+    <div class="recipe-row">
+      <img src="https://vkusnoff.com/img/recepty/1935/big.webp" alt="Борщ" class="recipe-img">
+      <a href="recipes/borsch.html" class="recipe-link">Борщ</a>
+    </div>
+    <div class="recipe-row">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_-aq3jvb6bx9Vwp-3h-FGlQoybTY9nQNxhw&s" alt="Гресневая каша" class="recipe-img">
+      <a href="recipes/backwheat.html" class="recipe-link">Гречневая каша</a>
+      
+    </div>
+  </div>
+</body>
+</html>

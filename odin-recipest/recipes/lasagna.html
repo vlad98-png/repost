@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lasagna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: burlywood;
+        }
+        flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        width: 300px;
+        }
+        h1, h2 {
+            color: brown;
+        }
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+            color:aquamarine
+            text greenyellow
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            line-height: 15px;
+        }
+        img {
+            transform: scale(2)
+        }
+        .recipe-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background:white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            height: 500px;
+            text-align: left;
+        }
+        .recipe-details {
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        .recipe-details h2 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .recipe-details ul, .recipe-details ol {
+            padding-left: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 15px;
+            box-shadow: 2px 2px 8px red;
+            font-size: 18px;
+        }
+        .box {
+            background:whitesmoke;
+            border: 2px solid white
+            border-radius 10px;
+            padding: 15px;
+            box-shadow: 2px 2px 8px greenyellow;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Лазанья</h1>
+    <ul>
+        <li><a href="/home/vlad/repost/odin-recipest/index.html">Odin Recipe</a></li>
+    </ul>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5d09Uhzwc1uX-OF7qiSJYtB_evQqde-bwFw&s" alt="Лазанья"/>
+    <div class="recipes-grid">
+        <div class="recipes-card">
+    <h2>Описание</h2>
+    <div class="recipe-details"></div>
+    <p>Классическое итальянское блюдо из слоев пасты, соуса болоньезе и сыра.</p>
+    <h2>Ингридиенты</h2>
+    <div class="flex-container">
+        <span class="flex-element">500 г ленты для лазаньи</span>
+        <span class="flex-element">400 г мясного фарша</span>
+        <span class="flex-element">400 мл томатного соуса</span>
+        <span class="flex-element">200 г моцареллы</span>
+        <span class="flex-element">100 г твёрдого сыра</span>
+        <span class="flex-element">1 луковица</span>
+        <span class="flex-element">2 зубчика чеснока</span>
+        <span class="flex-element">Оливковое масло</span>
+        <span class="flex-element">Соль и перец по вкусу</span>
+    </div>
+    <h3>Шаги</h3>
+    <ol>
+        <li>Обжарьте лук и чеснок на оливковом масле.</li>
+        <li>Добавьте фарш и готовьте до готовности</li>
+        <li>Влейте томатный соус, посолите и поперчите по вкусу. Тушите 15 минут.</li>
+        <li>Выложите слоями ленты для лазаньи, мясной соус и сыр.</li>
+        <li>Запекайте в разогретой до 180 духовке 30 минут.</li>
+    </ol>
+    </div>
+</body>
+</html>
